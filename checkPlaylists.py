@@ -13,8 +13,7 @@ scope = 'user-read-private user-read-playback-state user-modify-playback-state'
 #client_credentials_manager = SpotifyClientCredentials(client_id='001037844ee04932b6d967bbbf011e2e',
 #                                                      client_secret='fad660f0e7724d9b905d8ee76a85bc5d')
 #sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-client_id='001037844ee04932b6d967bbbf011e2e'
-client_secret='fad660f0e7724d9b905d8ee76a85bc5d'
+
 try:
     token = util.prompt_for_user_token(username, scope, redirect_uri='https://example.com/')
 except (AttributeError, JSONDecodeError):
